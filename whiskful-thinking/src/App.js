@@ -1,21 +1,5 @@
 import React, { useState } from 'react';
-
-function Header() {
-  return (
-    <header>
-      <img 
-        src="/cover for technova.png" 
-        alt="Technova header"
-        style={{
-          width: '100%',
-          maxHeight: '300px',
-          objectFit: 'cover',
-          display: 'block'
-        }}
-      />
-    </header>
-  );
-}
+import './App.css';
 
 const RecipeInputApp = () => {
   const [ingredients, setIngredients] = useState('');
@@ -116,18 +100,17 @@ const RecipeInputApp = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
       <img 
         src="/cover for technova.png" 
         alt="Technova header"
         style={{
           width: '100%',
-          maxHeight: '10000px',
           objectFit: 'cover',
           margin: -10,
         }}
       />
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="bg-white rounded-lg shadow-lg p-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             🍳 Whiskful Thinking Recipe Generator
@@ -285,16 +268,6 @@ const RecipeInputApp = () => {
           </div>
         </div>
 
-        {/* Instructions */}
-        <div className="mt-6 bg-blue-50 rounded-lg p-4">
-          <h3 className="font-semibold text-blue-800 mb-2">How to use:</h3>
-          <ol className="text-blue-700 text-sm space-y-1">
-            <li>Choose your meal type</li>
-            <li>Enter your ingredients separated by commas</li>
-            <li>Fill in your cooking preferences (optional)</li>
-            <li>Click "Get Recipe" to generate a personalized recipe</li>
-          </ol>
-        </div>
       </div>
     </div>
   );
