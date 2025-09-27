@@ -1,4 +1,4 @@
-### Whiskful Thinking 🍳✨
+# Whiskful Thinking 🍳✨
 
 
 Whiskful Thinking is a recipe generator that helps you create delicious meals based on the ingredients you have on hand, your dietary preferences, cooking time, and skill level. Say goodbye to meal planning stress and food waste—this generator helps you whisk away your cooking worries!
