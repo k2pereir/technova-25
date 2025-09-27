@@ -157,7 +157,7 @@ const RecipeInputApp = () => {
                     type="text"
                     value={preferences.dietary_restrictions}
                     onChange={(e) => handlePreferenceChange('dietary_restrictions', e.target.value)}
-                    placeholder="vegetarian, vegan, gluten-free, etc."
+                    placeholder="vegan, nut allergy, etc"
                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                   />
                 </div>
@@ -171,7 +171,7 @@ const RecipeInputApp = () => {
                     type="text"
                     value={preferences.cuisine_preferences}
                     onChange={(e) => handlePreferenceChange('cuisine_preferences', e.target.value)}
-                    placeholder="Italian, Asian, Mexican, etc."
+                    placeholder="none, Italian, Spicy, etc."
                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                   />
                 </div>
@@ -185,7 +185,7 @@ const RecipeInputApp = () => {
                     type="text"
                     value={preferences.cooking_time}
                     onChange={(e) => handlePreferenceChange('cooking_time', e.target.value)}
-                    placeholder="30 minutes, 1 hour, etc."
+                    placeholder="20 mins, 1 hour, etc."
                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                   />
                 </div>
@@ -235,8 +235,8 @@ const RecipeInputApp = () => {
               {loading && (
                 <div className="bg-gray-50 rounded-lg p-6 text-center">
                   <div className="animate-pulse">
-                    <div className="text-lg text-gray-500">🤖 AI is cooking up your recipe...</div>
-                    <div className="text-sm text-gray-400 mt-2">This may take a few moments</div>
+                    <div className="text-lg text-gray-500">Please hold, we're cooking up your recipe...</div>
+                    <div className="text-sm text-gray-400 mt-2">This might take a few moments</div>
                   </div>
                 </div>
               )}
@@ -262,10 +262,10 @@ const RecipeInputApp = () => {
         <div className="mt-6 bg-blue-50 rounded-lg p-4">
           <h3 className="font-semibold text-blue-800 mb-2">How to use:</h3>
           <ol className="text-blue-700 text-sm space-y-1">
-            <li>1. Choose your meal type</li>
-            <li>2. Enter your ingredients separated by commas</li>
-            <li>3. Fill in your cooking preferences (optional)</li>
-            <li>4. Click "Get Recipe" to generate a personalized recipe</li>
+            <li>Choose your meal type</li>
+            <li>Enter your ingredients separated by commas</li>
+            <li>Fill in your cooking preferences (optional)</li>
+            <li>Click "Get Recipe" to generate a personalized recipe</li>
           </ol>
         </div>
       </div>
