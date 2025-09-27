@@ -1,5 +1,22 @@
 import React, { useState } from 'react';
 
+function Header() {
+  return (
+    <header>
+      <img 
+        src="/cover for technova.png" 
+        alt="Technova header"
+        style={{
+          width: '100%',
+          maxHeight: '300px',
+          objectFit: 'cover',
+          display: 'block'
+        }}
+      />
+    </header>
+  );
+}
+
 const RecipeInputApp = () => {
   const [ingredients, setIngredients] = useState('');
   const [preferences, setPreferences] = useState({
@@ -100,6 +117,16 @@ const RecipeInputApp = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 p-6">
+      <img 
+        src="/cover for technova.png" 
+        alt="Technova header"
+        style={{
+          width: '100%',
+          maxHeight: '10000px',
+          objectFit: 'cover',
+          margin: -10,
+        }}
+      />
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
