@@ -23,7 +23,7 @@ const RecipeInputApp = () => {
     setMessage('');
 
     try {
-      // Convert ingredients string to array
+        // Convert ingredients string to array
       const ingredientsArray = ingredients
         .split(',')
         .map(item => item.trim())
